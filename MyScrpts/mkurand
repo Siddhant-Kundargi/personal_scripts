@@ -1,0 +1,5 @@
+#!/bin/bash
+
+head -c $2 /dev/urandom | strings | tr -d ' \t\n' > $1
+
+echo >> $1
